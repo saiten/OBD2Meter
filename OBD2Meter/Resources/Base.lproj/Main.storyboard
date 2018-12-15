@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OBD2Meter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRL-DM-m04">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-8D-kvj" customClass="LMGaugeView">
+                                        <rect key="frame" x="39.5" y="54" width="240" height="240"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ap7-8D-kvj" secondAttribute="height" multiplier="1:1" id="fha-KA-MEm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="ringBackgroundColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="valueTextColor">
+                                                <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="unitOfMeasurementTextColor">
+                                                <color key="value" white="0.69999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showLimitDot" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brf-XL-zik">
+                                        <rect key="frame" x="32.5" y="310" width="255" height="119.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-Ov-4RK" customClass="LMGaugeView">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="119.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8xd-Ov-4RK" secondAttribute="height" multiplier="1:1" id="3UN-a1-io6"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ringBackgroundColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="valueTextColor">
+                                                        <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unitOfMeasurementTextColor">
+                                                        <color key="value" white="0.69999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLimitDot" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="unitOfMeasurement" value="rpm"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mM-Df-Rrb" customClass="LMGaugeView">
+                                                <rect key="frame" x="135.5" y="0.0" width="119.5" height="119.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4mM-Df-Rrb" secondAttribute="height" multiplier="1:1" id="4dN-gT-Up7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ringBackgroundColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="valueTextColor">
+                                                        <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="unitOfMeasurementTextColor">
+                                                        <color key="value" white="0.69999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLimitDot" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="unitOfMeasurement" value="Bar"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4mM-Df-Rrb" secondAttribute="trailing" id="06L-XZ-ENQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="4mM-Df-Rrb" secondAttribute="bottom" id="Agk-uz-oMh"/>
+                                            <constraint firstAttribute="bottom" secondItem="8xd-Ov-4RK" secondAttribute="bottom" id="B36-3e-QZg"/>
+                                            <constraint firstAttribute="width" secondItem="brf-XL-zik" secondAttribute="height" multiplier="32:15" id="Csk-Ms-qqE"/>
+                                            <constraint firstItem="8xd-Ov-4RK" firstAttribute="top" secondItem="brf-XL-zik" secondAttribute="top" id="Jrj-bL-qUt"/>
+                                            <constraint firstItem="4mM-Df-Rrb" firstAttribute="top" secondItem="brf-XL-zik" secondAttribute="top" id="sas-WM-C5F"/>
+                                            <constraint firstItem="8xd-Ov-4RK" firstAttribute="leading" secondItem="brf-XL-zik" secondAttribute="leading" id="zvb-pk-sGv"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pag-53-HQo">
+                                        <rect key="frame" x="224" y="8" width="88" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="kmE-09-SRp"/>
+                                            <constraint firstAttribute="height" constant="30" id="kqD-HH-w4T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Connect">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-w9-7TX">
+                                        <rect key="frame" x="24" y="453.5" width="272" height="70.5"/>
+                                        <color key="backgroundColor" white="0.20000000000000001" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                                        <string key="text">ATRV
+12.4V
+&gt; ATI
+ELM327v1.5</string>
+                                        <color key="textColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="brf-XL-zik" firstAttribute="centerX" secondItem="YRL-DM-m04" secondAttribute="centerX" id="3eC-gL-WZa"/>
+                                    <constraint firstItem="ap7-8D-kvj" firstAttribute="width" secondItem="YRL-DM-m04" secondAttribute="width" multiplier="0.75" id="7E2-70-zlF"/>
+                                    <constraint firstItem="ap7-8D-kvj" firstAttribute="centerX" secondItem="YRL-DM-m04" secondAttribute="centerX" id="7Ho-j1-iAh"/>
+                                    <constraint firstItem="ywY-w9-7TX" firstAttribute="leading" secondItem="YRL-DM-m04" secondAttribute="leading" constant="24" id="GKe-8Q-oQJ"/>
+                                    <constraint firstItem="ap7-8D-kvj" firstAttribute="top" secondItem="Pag-53-HQo" secondAttribute="bottom" constant="16" id="OAu-Zl-GWs"/>
+                                    <constraint firstItem="ywY-w9-7TX" firstAttribute="top" secondItem="brf-XL-zik" secondAttribute="bottom" constant="24" id="Vgk-Jm-cyN"/>
+                                    <constraint firstItem="brf-XL-zik" firstAttribute="top" secondItem="ap7-8D-kvj" secondAttribute="bottom" constant="16" id="cFl-pH-PCP"/>
+                                    <constraint firstItem="Pag-53-HQo" firstAttribute="top" secondItem="YRL-DM-m04" secondAttribute="top" constant="8" id="knl-rq-uBm"/>
+                                    <constraint firstItem="brf-XL-zik" firstAttribute="height" secondItem="ap7-8D-kvj" secondAttribute="height" multiplier="0.5" id="nV6-VT-QbO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pag-53-HQo" secondAttribute="trailing" constant="8" id="qy4-C8-GrN"/>
+                                    <constraint firstAttribute="bottom" secondItem="ywY-w9-7TX" secondAttribute="bottom" constant="24" id="rja-ZP-CNs"/>
+                                    <constraint firstAttribute="trailing" secondItem="ywY-w9-7TX" secondAttribute="trailing" constant="24" id="xpn-Mo-LZl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YRL-DM-m04" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0uU-rC-JGn"/>
+                            <constraint firstItem="YRL-DM-m04" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MPx-al-SOt"/>
+                            <constraint firstItem="YRL-DM-m04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pss-j6-2Sw"/>
+                            <constraint firstItem="YRL-DM-m04" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uch-Y6-pVg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="boostGuageView" destination="4mM-Df-Rrb" id="tHE-Sp-p4K"/>
+                        <outlet property="connectButton" destination="Pag-53-HQo" id="qG3-17-hiH"/>
+                        <outlet property="logTextView" destination="ywY-w9-7TX" id="lnW-TG-x4r"/>
+                        <outlet property="rpmGuageView" destination="8xd-Ov-4RK" id="2yE-qB-174"/>
+                        <outlet property="speedGuageView" destination="ap7-8D-kvj" id="XAv-Ih-dcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

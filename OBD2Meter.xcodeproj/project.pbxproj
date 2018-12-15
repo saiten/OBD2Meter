@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F8D6FB41FE8AF530064FFFA /* OBDSerialConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D6FB31FE8AF530064FFFA /* OBDSerialConnection.swift */; };
+		7F8D6FB61FE8AF890064FFFA /* OBDCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D6FB51FE8AF890064FFFA /* OBDCommunicator.swift */; };
+		7F8D6FBD1FE8B1850064FFFA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D6FBC1FE8B1850064FFFA /* ViewModel.swift */; };
+		7F8D6FBF1FE8C8630064FFFA /* Observable+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D6FBE1FE8C8630064FFFA /* Observable+Util.swift */; };
+		DF52525C2E16C6E5B433BB8C /* Pods_OBD2Meter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07A381174D9F0C091C04E61 /* Pods_OBD2Meter.framework */; };
+		E1D623561FE4E8E4002B4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D623551FE4E8E4002B4ABE /* AppDelegate.swift */; };
+		E1D623581FE4E8E4002B4ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D623571FE4E8E4002B4ABE /* ViewController.swift */; };
+		E1D6235B1FE4E8E4002B4ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D623591FE4E8E4002B4ABE /* Main.storyboard */; };
+		E1D6235D1FE4E8E4002B4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D6235C1FE4E8E4002B4ABE /* Assets.xcassets */; };
+		E1D623601FE4E8E4002B4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D6235E1FE4E8E4002B4ABE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14AF3F31CDE6AF07D8CD119E /* Pods-OBD2Meter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBD2Meter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBD2Meter/Pods-OBD2Meter.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8D6FB31FE8AF530064FFFA /* OBDSerialConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDSerialConnection.swift; sourceTree = "<group>"; };
+		7F8D6FB51FE8AF890064FFFA /* OBDCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDCommunicator.swift; sourceTree = "<group>"; };
+		7F8D6FBC1FE8B1850064FFFA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7F8D6FBE1FE8C8630064FFFA /* Observable+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Util.swift"; sourceTree = "<group>"; };
+		CD4CECB6F843F1763CB9FF5D /* Pods-OBD2Meter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBD2Meter.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBD2Meter/Pods-OBD2Meter.release.xcconfig"; sourceTree = "<group>"; };
+		E07A381174D9F0C091C04E61 /* Pods_OBD2Meter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBD2Meter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D623521FE4E8E4002B4ABE /* OBD2Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBD2Meter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D623551FE4E8E4002B4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1D623571FE4E8E4002B4ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1D6235A1FE4E8E4002B4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1D6235C1FE4E8E4002B4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1D6235F1FE4E8E4002B4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1D623611FE4E8E4002B4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1D6234F1FE4E8E4002B4ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF52525C2E16C6E5B433BB8C /* Pods_OBD2Meter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		511A10C96A8E9CF07C14B156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E07A381174D9F0C091C04E61 /* Pods_OBD2Meter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F8D6FB91FE8AF9B0064FFFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F8D6FBB1FE8AFED0064FFFA /* OBD */,
+				E1D623551FE4E8E4002B4ABE /* AppDelegate.swift */,
+				E1D623571FE4E8E4002B4ABE /* ViewController.swift */,
+				7F8D6FBC1FE8B1850064FFFA /* ViewModel.swift */,
+				7F8D6FBE1FE8C8630064FFFA /* Observable+Util.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7F8D6FBA1FE8AFAA0064FFFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D623591FE4E8E4002B4ABE /* Main.storyboard */,
+				E1D6235C1FE4E8E4002B4ABE /* Assets.xcassets */,
+				E1D6235E1FE4E8E4002B4ABE /* LaunchScreen.storyboard */,
+				E1D623611FE4E8E4002B4ABE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F8D6FBB1FE8AFED0064FFFA /* OBD */ = {
+			isa = PBXGroup;
+			children = (
+				7F8D6FB31FE8AF530064FFFA /* OBDSerialConnection.swift */,
+				7F8D6FB51FE8AF890064FFFA /* OBDCommunicator.swift */,
+			);
+			path = OBD;
+			sourceTree = "<group>";
+		};
+		8F8C1AAEFDE5CC830FEF2900 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14AF3F31CDE6AF07D8CD119E /* Pods-OBD2Meter.debug.xcconfig */,
+				CD4CECB6F843F1763CB9FF5D /* Pods-OBD2Meter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1D623491FE4E8E4002B4ABE = {
+			isa = PBXGroup;
+			children = (
+				E1D623541FE4E8E4002B4ABE /* OBD2Meter */,
+				E1D623531FE4E8E4002B4ABE /* Products */,
+				8F8C1AAEFDE5CC830FEF2900 /* Pods */,
+				511A10C96A8E9CF07C14B156 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1D623531FE4E8E4002B4ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D623521FE4E8E4002B4ABE /* OBD2Meter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D623541FE4E8E4002B4ABE /* OBD2Meter */ = {
+			isa = PBXGroup;
+			children = (
+				7F8D6FBA1FE8AFAA0064FFFA /* Resources */,
+				7F8D6FB91FE8AF9B0064FFFA /* Classes */,
+			);
+			path = OBD2Meter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1D623511FE4E8E4002B4ABE /* OBD2Meter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D623641FE4E8E4002B4ABE /* Build configuration list for PBXNativeTarget "OBD2Meter" */;
+			buildPhases = (
+				980213D213E24E9C20BF2BC5 /* [CP] Check Pods Manifest.lock */,
+				E1D6234E1FE4E8E4002B4ABE /* Sources */,
+				E1D6234F1FE4E8E4002B4ABE /* Frameworks */,
+				E1D623501FE4E8E4002B4ABE /* Resources */,
+				769DD49E4EBE0478E550DF0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBD2Meter;
+			productName = OBD2Meter;
+			productReference = E1D623521FE4E8E4002B4ABE /* OBD2Meter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1D6234A1FE4E8E4002B4ABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = saiten;
+				TargetAttributes = {
+					E1D623511FE4E8E4002B4ABE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E1D6234D1FE4E8E4002B4ABE /* Build configuration list for PBXProject "OBD2Meter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1D623491FE4E8E4002B4ABE;
+			productRefGroup = E1D623531FE4E8E4002B4ABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1D623511FE4E8E4002B4ABE /* OBD2Meter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D623501FE4E8E4002B4ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D623601FE4E8E4002B4ABE /* LaunchScreen.storyboard in Resources */,
+				E1D6235D1FE4E8E4002B4ABE /* Assets.xcassets in Resources */,
+				E1D6235B1FE4E8E4002B4ABE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		769DD49E4EBE0478E550DF0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OBD2Meter/Pods-OBD2Meter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/LMGaugeView/LMGaugeView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBluetoothKit/RxBluetoothKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LMGaugeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBluetoothKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBD2Meter/Pods-OBD2Meter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980213D213E24E9C20BF2BC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OBD2Meter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D6234E1FE4E8E4002B4ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8D6FBD1FE8B1850064FFFA /* ViewModel.swift in Sources */,
+				E1D623581FE4E8E4002B4ABE /* ViewController.swift in Sources */,
+				E1D623561FE4E8E4002B4ABE /* AppDelegate.swift in Sources */,
+				7F8D6FB61FE8AF890064FFFA /* OBDCommunicator.swift in Sources */,
+				7F8D6FBF1FE8C8630064FFFA /* Observable+Util.swift in Sources */,
+				7F8D6FB41FE8AF530064FFFA /* OBDSerialConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1D623591FE4E8E4002B4ABE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D6235A1FE4E8E4002B4ABE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1D6235E1FE4E8E4002B4ABE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D6235F1FE4E8E4002B4ABE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1D623621FE4E8E4002B4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1D623631FE4E8E4002B4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1D623651FE4E8E4002B4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AF3F31CDE6AF07D8CD119E /* Pods-OBD2Meter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47JL4W4N2;
+				INFOPLIST_FILE = "$(SRCROOT)/OBD2Meter/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.saiten.OBD2Meter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1D623661FE4E8E4002B4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4CECB6F843F1763CB9FF5D /* Pods-OBD2Meter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47JL4W4N2;
+				INFOPLIST_FILE = "$(SRCROOT)/OBD2Meter/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.saiten.OBD2Meter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1D6234D1FE4E8E4002B4ABE /* Build configuration list for PBXProject "OBD2Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D623621FE4E8E4002B4ABE /* Debug */,
+				E1D623631FE4E8E4002B4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D623641FE4E8E4002B4ABE /* Build configuration list for PBXNativeTarget "OBD2Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D623651FE4E8E4002B4ABE /* Debug */,
+				E1D623661FE4E8E4002B4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1D6234A1FE4E8E4002B4ABE /* Project object */;
+}
